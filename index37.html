@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Пример объявления локальной переменной</title>
+    </head>
+
+    <body>
+      <script>
+        function showMessage(from, text) {
+          from = '**' + from + '**'; // (1), красиво оформили from
+          alert(from + '\n\n' + text);
+        }
+        let from = 'Дмитрий Анатольевич Медведев', msg = 'Привет!'; // (2)
+        showMessage(from, msg); // Значения будут скопированы в параметры
+        alert(from); // Перезапись в строке (1) не повлияет на внешнюю переменную
+      </script>
+    </body>
+</html>

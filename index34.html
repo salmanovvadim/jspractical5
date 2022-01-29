@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Работа с циклом в функции</title>
+    </head>
+    
+    <body>
+      <script>
+        function count() {
+            for (let i = 0; i < 3; i++) {
+              let j = i * 2;
+            }
+            // Переменные i и j будут видны только в теле цикла for
+            alert('i = ' + i); // i = 3, на этом значении цикл остановится
+            alert('j = ' + j); // j = 4, последнее значение, на котором цикл сработал, было i = 2
+          }
+          count();
+      </script>
+        
+    </body>
+
+  </html>

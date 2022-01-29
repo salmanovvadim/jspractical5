@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Задание 1-2</title>
+    </head>
+
+    <body>
+      <script>
+        //String function for calculating the discriminant by the formula (Строчная функция для вычисления дискриминанта по формуле b * b - 4 * a * c)
+        let calcD = () => b * b - 4 * a * c;
+        //Entering the value of the variable "a" (Ввод значения переменной "a")
+        let a = prompt('Введите числовое значение переменной a (число должно содержать не более 155 символов)', '');
+
+        //Validation of the input of the variable "a" (Проверка правильности ввода переменной "a")
+        if (Number.isNaN(+a) || !Number.isNaN(+a) && a.length > 155)
+        {
+          alert('Введенное Вами значение переменной a не является числовым, либо количество символов в числе привышает установленный лимит! Пожалуйста попробуйте еще раз.')
+          a = prompt('Введите числовое значение переменной a (число должно содержать не более 155 символов)', '');
+        }
+
+        //Entering the value of the variable "b" (Ввод значения переменной "b")
+        let b = prompt('Введите числовое значение переменной b (число должно содержать не более 155 символов)', '');
+        //Validation of the input of the variable "b" (Проверка правильности ввода переменной "b")
+        if (Number.isNaN(+b) || !Number.isNaN(+b) && b.length > 155)
+        {
+          alert('Введенное Вами значение переменной b не является числовым, либо количество символов в числе привышает установленный лимит! Пожалуйста попробуйте еще раз.')
+          b = prompt('Введите числовое значение переменной b (число должно содержать не более 155 символов)', '');
+        }
+
+        //Entering the value of the variable "c" (Ввод значения переменной "c")
+        let c = prompt('Введите числовое значение переменной c (число должно содержать не более 155 символов)', '');    
+        //Validation of the input of the variable "c" (Проверка правильности ввода переменной "c")   
+        if (Number.isNaN(+c) || !Number.isNaN(+c) && c.length > 155)
+        {
+          alert('Введенное Вами значение переменной c не является числовым, либо количество символов в числе привышает установленный лимит!Пожалуйста попробуйте еще раз.')
+          c = prompt('Введите числовое значение переменной c (число должно содержать не более 155 символов)', '');
+        }
+
+        //Result Output (Вывод результата)
+          alert('D = ' + calcD(a, b, c));
+      </script>
+    </body>
+
+  </html>
