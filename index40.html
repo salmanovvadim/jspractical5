@@ -11,11 +11,9 @@
       <script>
         //String function returning a random value from 0 to 99 (Строчная функция возвращающая случайное значение от 0 до 99)
         let getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-        min = Math.ceil(min);
-        max = Math.floor(max);
         
         //Вывод результата в консоль с использованием log-сообщений (Вывод результата в консоль с использованием log-сообщений)
-        console.log('Номер лотерейного билета: ' + getRandom(0, 99) + '-' + getRandom(0, 99) + '-' + getRandom(0, 99));
+        console.log('Номер лотерейного билета: ' + getRandom(1, 99) + '-' + getRandom(1, 99) + '-' + getRandom(1, 99));
       </script>
     </body>
 
